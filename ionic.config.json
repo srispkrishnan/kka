@@ -1,7 +1,0 @@
-{
-  "name": "konguweb",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
