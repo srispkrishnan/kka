@@ -1,0 +1,7 @@
+{
+  "name": "kongumobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

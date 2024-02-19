@@ -1,0 +1,72 @@
+ion-content{
+    top:0px;
+  }
+  .imgContainer{
+    height: 25vh;
+    width: 100%;
+  }
+  
+  .imgSlider{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .headerCard{
+    margin:0px;
+    border-radius: 0%;
+  }
+
+  #content{
+    position: relative;
+}
+.galleryR{
+    position: relative;
+    animation-duration: 3s;
+   animation-name: fadeInRight;
+}
+
+.galleryL{
+    position: relative;
+    animation-duration: 3s;
+   animation-name: fadeInLeft;
+}
+
+.right{
+    text-align: right;
+    animation-duration: 2s;
+   animation-name: fadeInLeft;
+}
+
+.left{
+   text-align: left;
+   animation-duration: 2s;
+   animation-name: fadeInRight;
+}
+
+.zIndxHi{
+    z-index: 998;
+}
+
+.zIndxLo{
+    z-index: 997;
+}
+
+.contentZIndex{
+    z-index: 999;
+}
+
+.ion-card-title{
+    height: 350px;
+}
+
+.card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.overlay{
+    font-weight: 600;
+}
+

@@ -1,0 +1,80 @@
+<ion-content [fullscreen]="true">
+  <swiper #swiper [keyboard]="true" [autoplay]="true" [speed]="5000" [loop]="true" effect="flip"
+   [slidesPerView]="1" [simulateTouch]="false">
+    <ng-template swiperSlide>
+      <ion-card>
+        <div class="imgContainer">
+          <div class="overlay">
+            <div class="overlayText">
+            <br/><span>Welcome all Canada Kongu Uravugal</span></div>
+          </div>
+          <img class="imgSlider" src="../../assets/img/29.jpg">
+        </div>
+      </ion-card>
+    </ng-template>
+    <ng-template swiperSlide>
+      <ion-card>
+        <div class="imgContainer">
+          <div class="overlay">
+            <div class="overlayText">
+            <br/><span>The essence of the beautiful is unity in variety</span></div>
+          </div>
+          <img class="imgSlider" src="../../assets/img/banner1.jpg">
+        </div>
+      </ion-card>
+    </ng-template>
+    <ng-template swiperSlide><ion-card>
+      <div class="imgContainer">
+        <div class="overlay">
+          <div class="overlayText">
+          <br/><span>We Serve Our Community</span></div>
+        </div>
+        <img class="imgSlider" src="../../assets/img/banner3.jpg">
+      </div>
+    </ion-card></ng-template>
+  </swiper>
+  <ion-card mode="md">
+    <ion-card-header>
+      <ion-card-title class="konguText">WHO WE ARE</ion-card-title>
+    </ion-card-header>
+
+      <img class="imgSiz" alt="Kongu Canada" src="../../assets/img/temple.jpg" />
+
+    <ion-card-content>
+      <ion-item>
+        <div class="abtTxtContainer">
+          <p class="aboutText">
+            Kongu Canada was founded by a team of interested and enthusiastic people in 2018 to provide a platform for all Kongu families living in Canada, to get together, network, stay connected and support each other.
+            After the grand success of the first Kongu family meet in 2019 Toronto, Kongu Canada continuing the Kongu family meet every year.
+          </p>
+          <ul>
+            <li>
+              To preserve, maintain and promote cultural heritage of the people of Kongu community from India
+            </li>
+            <li>
+              To help and propagate cultural, eductional, social, economic and community affairs of the people of Kongu origin in Canada
+            </li>
+            <li>
+              To organize periodic South Indian literary, cultural and educational conferences in Canada to promote Kongu culture
+            </li>
+            <li>
+              To foster brotherhood and togetherness among people from Kongu background and others
+            </li>
+            <li>
+              To promote and carry forward Kongu culture to the younger generation
+            </li>
+            <li>
+              To meet periodically and celebrate traditional festivals and customs as a community
+            </li>
+          </ul>
+          <div class="learnMore">
+            <ion-button shape="round" fill="outline" mode="md">
+              <div class="" (click)="goToPage()">Learn More..</div>
+            </ion-button>
+          </div>
+        </div>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <br/><br/><br/><br/>
+</ion-content>

@@ -1,0 +1,97 @@
+/*ion-tab-bar {
+    bottom: 20px;
+    position: relative;
+    border-radius: 16px;
+    width: 92%;
+    margin: 0 auto;
+  }*/
+  ion-tabs{
+    position: relative!important;
+}
+  ion-tab-button {
+    --color: var(--kongu-green-fade);
+    --color-selected: var(--kongu-green);
+  
+    &::before {
+      background-color: transparent;
+      display: block;
+      content: "";
+      margin: 0 auto;
+      width: 50px;
+      height: 2px;
+    }
+  
+    &.tab-selected::before {
+      background-color: var(--kongu-red);
+    }
+ 
+    ion-label{
+      div{
+        font-weight: 700;
+        background: linear-gradient(to bottom, var(--kongu-green-fade) 55%, var(--kongu-red-fade) 45%);
+        -webkit-background-clip: text;
+          color: transparent;
+      }
+    }
+   
+  }
+
+  ion-tab-button.tab-selected{
+    ion-label{
+      div{
+        font-weight: 700;
+        background: linear-gradient(to bottom,var(--kongu-green) 55%, var(--kongu-red) 45%);
+        -webkit-background-clip: text;
+          color: transparent;
+      }
+    }
+  }
+
+  ion-tab-button:hover{
+    ion-label{
+      div{
+        font-weight: 700;
+        background: linear-gradient(to bottom,var(--kongu-green) 55%,var(--kongu-red) 45%);
+        -webkit-background-clip: text;
+          color: transparent;
+      }
+    }
+  }
+
+  .headerText{
+    justify-content: center;
+    display: flex;
+  }
+
+  .headerImg{
+    width:53px;
+    height: 53px;
+  }
+
+  .logoContainer{
+    display: flex;
+    float: left;
+    cursor: pointer;
+    width:100%;
+    justify-content: center;
+    height: 53px;
+  }
+
+  .logoItem{
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom,	var(--kongu-green) 55%, var(--kongu-red) 45%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo{
+    width: 53px;
+    height: 53px;
+  }

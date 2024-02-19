@@ -1,0 +1,65 @@
+ion-content{
+    top:0px;
+  }
+
+  
+ion-card-content {
+  padding-inline-start: 0px!important;
+  padding-inline-end: 0px!important;
+}
+
+ion-button{
+  font-size: 15px;
+  font-weight: 700;
+}
+
+  /* slider styles */
+
+.imgContainer{
+  height: 25vh;
+  width: 100%;
+}
+
+.imgSlider{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+ion-card{
+  margin-top:12px;
+}
+
+
+
+.swiper-cube .swiper-cube-shadow:before{
+  background: transparent;
+}
+
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: unset;
+} 
+
+.swiper-3d .swiper-slide-shadow-left {
+  background-image: unset;
+}
+/**************************/
+
+/** animation **/
+
+ion-card-title {
+  animation-duration: 5s;
+  animation-name: fadeInRight;
+}
+
+/**************/
+
+.imgSiz{
+  width: 100%;
+  height: 35vh;
+}
+
+.learnMore{
+  display:flex;
+  justify-content: right;
+}

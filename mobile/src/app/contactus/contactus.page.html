@@ -1,0 +1,131 @@
+<ion-content [fullscreen]="true" mode="md">
+  <ion-card class="headerCard">
+    <div class="imgContainer">
+      <div class="overlay">
+        <div class="overlayText">
+        <br/><span>Contact Us</span></div>
+      </div>
+      <img class="imgSlider" src="../../assets/img/toronto-header.jpg">
+    </div>
+  </ion-card>
+  <ion-card mode="md">
+    <ion-card-header>
+      <ion-card-title class="konguText">Get In Touch</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item class="email">
+                <ion-list>
+                  <div class="emailContainer">
+                    <ion-icon name="mail"></ion-icon>
+                    <div class="emailTitle">Email:</div>
+                    <div class="email">admin@kongucanada.com</div>
+                  </div>
+                </ion-list>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <ion-item class="email">
+                <ion-list>
+                  <div class="emailContainer">
+                    <div class="emailTitle">Follow us with:&nbsp;<ion-icon name="logo-facebook" (click)="openSocialMedia()"></ion-icon></div>
+                  </div>
+                </ion-list>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="showSubmitMessage" class="submitNote">
+            <ion-col>
+              {{submitMessage}}
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col>
+              <br/>
+              <ion-card-title class="konguText">Please Fill In Your Details</ion-card-title>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-input 
+                    placeholder="Name" 
+                    [(ngModel)]="name">
+                  </ion-input>
+                  <ion-icon class="iconEmailTxt" name="person" slot="start"></ion-icon>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-input 
+                    placeholder="Email"
+                    [(ngModel)]="email">
+                  </ion-input>
+                  <ion-icon class="iconEmailTxt" name="mail" slot="start"></ion-icon>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-input 
+                    placeholder="Phone Number"
+                    [(ngModel)]="phoneNumber">
+                  </ion-input>
+                  <ion-icon class="iconEmailTxt" name="call" slot="start"></ion-icon>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-input 
+                    placeholder="Subject"
+                    [(ngModel)]="subject">
+                  </ion-input>
+                  <ion-icon class="iconEmailTxt" name="pencil" slot="start"></ion-icon>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col size="12">
+              <ion-list>
+                <ion-item>
+                  <ion-textarea
+                    placeholder="Message"
+                    type="text"
+                    maxlength=250
+                    [(ngModel)]="message">
+                  </ion-textarea>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+          </ion-row>
+          <ion-row *ngIf="!showSubmitMessage">
+            <ion-col size="12">
+              <div class="submit">
+                <ion-button disabled="{{isSubmitButtonDisabled}}" shape="round" fill="outline" mode="md" (click)="submit()">
+                  <div *ngIf="!isSubmitButtonDisabled" class="">Submit</div>
+                  <div *ngIf="isSubmitButtonDisabled" class="">Submitting...</div>
+                </ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
