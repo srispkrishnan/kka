@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Kongu Canada</title>
+
+  <base href="/" />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+
+  <link rel="icon" type="image/png" href="assets/icon/kongu.ico" />
+
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <meta name="description" content="Kongu community in Canada">
+  <meta name="Keywords" content="Kongu Canada, Canada Kongu, Kongu community in Canada, Canada Kongu community">
+</head>
+<script>
+  if ((navigator.userAgent.match(/Android/i)) || (navigator.userAgent.match(/android/i)) || (navigator.userAgent.match(/iphone/i)) || (navigator.userAgent.match(/ipod/i)) || (navigator.userAgent.match(/ipad/i))) {
+			location.replace("https://mobile.kongucanada.com");
+	}
+  window.addEventListener('resize', function() {
+      if (window.innerWidth < 1000) {
+        window.location.href = "https://mobile.kongucanada.com"; 
+      }
+  });
+  window.addEventListener('load', function() {
+    if (window.innerWidth < 1000) {
+      window.location.href = "https://mobile.kongucanada.com"
+    }
+  });
+</script>
+<body>
+  <app-root></app-root>
+</body>
+
+</html>

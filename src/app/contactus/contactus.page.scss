@@ -1,0 +1,78 @@
+.ion-card-title{
+    height: 350px;
+}
+
+.card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.overlay{
+    font-weight: 600;
+}
+
+p{
+    line-height: 2;
+}
+
+ion-icon{
+    font-size: 35px;
+    color: var(--kongu-green);
+}
+
+.emailTitle{
+    font-weight: 600;
+}
+
+.email, .emailTitle{
+    font-size: 15px;
+    color: black;
+}
+
+ion-input, ion-textarea{
+    --inner-border-width:0px;
+    --border-style: none;
+    border-bottom: none;
+    --border-width: 0px;
+    font-size: 15px;
+    ion-icon{
+        font-size: 20px;
+        color: var(--kongu-green);
+    }
+}
+ion-item{
+border-bottom: solid 1px var(--kongu-green);
+--padding-start:0px;
+}
+.borderNone{
+    border:none;
+}
+.submit{
+  display:flex;
+  justify-content: right;
+  ion-button {
+    height: 2.1em;
+    font-size: 15px;
+    font-weight: 700;
+  }
+}
+
+.submitNote{
+    color: black;
+}
+
+
+/** animation **/
+
+.right{
+    animation-duration: 2s;
+    animation-name: fadeInRight;
+  }
+
+.left{
+    animation-duration: 2s;
+    animation-name: fadeInLeft;
+}
+  
+  /***************/

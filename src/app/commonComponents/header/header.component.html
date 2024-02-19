@@ -1,0 +1,35 @@
+<div id="header" >
+  <ion-header class="header" [translucent]="true" mode="md">
+    <ion-grid fixed>
+     <ion-row class="ion-align-items-center">
+       <ion-col size="5">
+         <div class="logoContainer" (click)="goToPage('home')">
+           <div>
+             <img src="../../../assets/img/kongu.jpg" class="logo ion-text-left">
+           </div>
+           <div class="logoItem">
+             Kongu Canada
+           </div>
+         </div>
+       </ion-col>
+       <ion-col size="7">
+         <div class="navbar" class="ion-text-right menuContainer">
+           <div class="menuItem menuMargin" (click)="goToPage('home')">
+             Home
+           </div>
+           <div class="menuItem menuMargin" (click)="goToPage('about')">
+             About us
+           </div>
+           <div class="menuItem menuMargin" (click)="goToPage('gallery')">
+             Gallery
+           </div>
+           <div class="menuItem menuMargin" (click)="goToPage('contact')">
+             Contact us
+           </div>
+         </div>
+       
+       </ion-col>
+     </ion-row>
+   </ion-grid>
+  </ion-header>
+</div>

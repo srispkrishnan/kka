@@ -1,0 +1,24 @@
+#footer{
+    height: 4rem;
+}
+
+.footerContent{
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    font-size: 1.2rem;
+    justify-content: center;
+    background: linear-gradient(to bottom,	var(--kongu-green) 55%, var(--kongu-red) 45%);
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: rgb(0 0 0 / 30%) 0px -6px 6px -6px;
+}
+
+  ion-icon{
+    font-size:2rem;
+    float:right;
+    color: var(--kongu-green);
+  }

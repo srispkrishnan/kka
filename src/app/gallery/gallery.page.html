@@ -1,0 +1,28 @@
+<ion-content mode="md">
+  <app-header></app-header>
+  <div id="content" [ngClass]="(contentZInxChange)?'contentZIndex':''">
+    <div>
+      <ion-card class="ion-card-title">
+        <ion-img
+        src="../../assets/img/toronto.jpg"
+        alt="Kongu Canada"
+        class="card-img"
+      ></ion-img>
+      <div class="overlay">
+        <div class="overlayText">Gallery</div>
+      </div>
+      </ion-card>
+    </div>
+    <ion-grid fixed>
+      <ion-row *ngFor="let image of imageList" class="ion-align-items-left">
+       <ion-col size="12">
+          <ion-card-title class="konguText right">{{image.title}}</ion-card-title>
+          <div class="galleryR" [ngClass]="(zInxChange==image.title)?'zIndxHi':'zIndxLo'">
+            <app-gallery-viewer [showLimit]=13 [galleryData]="image.images" (zIndexChange)="change($event)" [showCount]="true" [showTitle]="true" [title]="image.title"></app-gallery-viewer>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <app-footer></app-footer>
+</ion-content>

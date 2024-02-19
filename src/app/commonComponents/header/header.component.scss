@@ -1,0 +1,61 @@
+#header{
+    height: 7rem;
+    position: sticky;
+    overflow-y: auto;
+    top: 0px;
+    width: 100%;
+    background: var(--kongu-white);
+    z-index: 999;
+}
+
+
+  /* Header styles */
+  ion-header{
+    height: 6rem;
+  }
+  
+  .logo {
+    height:4.5rem;
+  }
+  
+  .logoContainer{
+    display: flex;
+    float: left;
+    cursor: pointer;
+  }
+  
+  .logoItem{
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom,	var(--kongu-green) 60%, var(--kongu-red) 40%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuContainer{
+    display: flex;
+    float: right;
+  }
+  
+  .menuItem{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, var(--kongu-green) 55%, var(--kongu-red) 45%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    font-size: 1.45rem;
+  }
+  
+  .menuMargin{
+    margin-right: 10px;
+  }
+  

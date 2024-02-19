@@ -1,0 +1,41 @@
+p{
+    line-height: 2;
+}
+
+ion-grid{
+    background: var(--kongu-green);
+}
+
+.ion-card-title{
+    height: 350px;
+}
+
+.card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.overlay{
+    font-weight: 600;
+}
+
+/** animation **/
+
+ion-card-title{
+  animation-duration: 2s;
+  animation-name: fadeInRight;
+}
+
+ion-thumbnail{
+    animation-duration: 3s;
+    animation-name: fadeInLeft;
+}
+
+.abtTxtContainer{
+    height: 100%;
+    animation-duration: 4s;
+    animation-name: fadeInRight;
+}
+
+/***************/

@@ -1,0 +1,159 @@
+<ion-content [fullscreen]="true">
+  <app-header></app-header>
+  <div id="content">
+    <ion-card class="ion-card-title">
+      <ion-img
+      src="../../assets/img/toronto.jpg"
+      alt="Kongu Canada"
+      class="card-img"
+    ></ion-img>
+    <div class="overlay">
+      <div class="overlayText">Contact Us</div>
+    </div>
+    </ion-card>
+    <ion-grid fixed>
+      <ion-row class="ion-align-items-left">
+        <ion-col size="12"
+        size-xs="12"
+        size-sm="12"
+        size-md="12"
+        size-lg="6"
+        size-xl="6">
+        <ion-card class="left">
+          <ion-card-header>
+            <ion-card-title class="konguText">Get In Touch</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              <ion-grid fixed>
+                <ion-row>
+                  <ion-col size="1">
+                    <ion-icon name="mail"></ion-icon>
+                  </ion-col>
+                  <ion-col size="11">
+                    <div class="emailTitle">Email:</div>
+                    <div class="email">admin@kongucanada.com</div>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="showSubmitMessage" class="submitNote">
+                  <ion-col>
+                    {{submitMessage}}
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col>
+                    <br/>
+                    <ion-card-title class="konguText">Please Fill In Your Details</ion-card-title>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col size="12">
+                    <ion-list>
+                      <ion-item>
+                        <ion-input 
+                          placeholder="Name" 
+                          [(ngModel)]="name">
+                        </ion-input>
+                        <ion-icon class="iconEmailTxt" name="person" slot="start"></ion-icon>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col size="12">
+                    <ion-list>
+                      <ion-item>
+                        <ion-input 
+                          placeholder="Email"
+                          [(ngModel)]="email">
+                        </ion-input>
+                        <ion-icon class="iconEmailTxt" name="mail" slot="start"></ion-icon>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col size="12">
+                    <ion-list>
+                      <ion-item>
+                        <ion-input 
+                          placeholder="Phone Number"
+                          [(ngModel)]="phoneNumber">
+                        </ion-input>
+                        <ion-icon class="iconEmailTxt" name="call" slot="start"></ion-icon>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col size="12">
+                    <ion-list>
+                      <ion-item>
+                        <ion-input 
+                          placeholder="Subject"
+                          [(ngModel)]="subject">
+                        </ion-input>
+                        <ion-icon class="iconEmailTxt" name="pencil" slot="start"></ion-icon>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col size="12">
+                    <ion-list>
+                      <ion-item>
+                        <ion-textarea
+                          placeholder="Message"
+                          type="text"
+                          maxlength=250
+                          [(ngModel)]="message">
+                        </ion-textarea>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                </ion-row>
+                <ion-row *ngIf="!showSubmitMessage">
+                  <ion-col size="12">
+                    <div class="submit">
+                      <ion-button disabled="{{isSubmitButtonDisabled}}" shape="round" fill="outline" mode="md" (click)="submit()">
+                        <div *ngIf="!isSubmitButtonDisabled" class="">Submit</div>
+                        <div *ngIf="isSubmitButtonDisabled" class="">Submitting...</div>
+                      </ion-button>
+                    </div>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+          </ion-card-content>
+        </ion-card>
+        </ion-col>
+        <ion-col size="12"
+        size-xs="12"
+        size-sm="12"
+        size-md="12"
+        size-lg="6"
+        size-xl="6">
+        <ion-card class="right">
+          <ion-card-header>
+            <ion-card-title class="konguText">Location</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+              <ion-item class="borderNone">
+                  <div class="abtTxtContainer">
+                    <p class="aboutText">
+                      Toronto is the most populous city in Canada and the capitial city of the Canadian province of Ontario. It is the fourth-most populous city in North America.
+                       The city is the anchor of the Golden Horseshoe, surrounding the western end of Lake Ontario.
+                    </p><br/>
+                    <p class="aboutText">
+                      Toronto is an international center of business, finance, arts, sports and culture, and is recognized as one of the most multicultural and cosmopolitan cities in the world. 
+                      The city is home to the Toronto Stock Exchange, the headquarters of Canada's five largest banks and the headquarters of many large Canadian and multinational corporations.
+                    </p>
+                  </div>
+              </ion-item>
+          </ion-card-content>
+        </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <app-footer></app-footer>
+</ion-content>
+

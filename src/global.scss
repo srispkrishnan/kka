@@ -1,0 +1,131 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
+@import "swiper/scss/autoplay";
+@import "swiper/scss/effect-cube";
+@import "swiper/scss/effect-flip";
+
+@import url(./theme/animationeffect.css);
+
+.swiper-pagination {
+    --bullet-background-active: var(--kongu-green);
+    --bullet-background: var(--kongu-red);
+  }
+  
+  #content{
+    min-height: calc(100vh - 11rem);
+  }
+  
+  
+  ion-thumbnail {
+    height:250px;
+    width:250px;
+    margin-top: 8px; 
+    margin-bottom: 8px;
+  }
+  
+  ul li::before{
+    color: var(--kongu-green);
+    content: "\2022";
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  ul{
+    list-style: none;
+  }
+  
+  ul, .aboutText{
+    font-size:14px!important;
+    text-align: justify;
+  }
+  
+  .konguText{
+    background: linear-gradient(to bottom, var(--kongu-green) 55%, var(--kongu-red) 45%);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .abtTxtContainer{
+    line-height:26px;
+  }
+  ion-card-title{
+    font-weight:600;
+    font-size:1.45rem;
+  }
+  ion-item{
+    --inner-border-width: 0px;
+  }
+  ion-grid{
+    height:auto;
+  }
+  
+  ion-button{
+    --border-color: var(--kongu-green);
+    --background: transparent;
+    --color: var(--kongu-red);
+    --color-activated:none;
+    text-transform:none;
+  }
+  
+  
+  .toast {
+    --background: #f4f4fa;
+    --box-shadow: 3px 3px 10px 0 rgba(0, 0, 0, 0.2);
+    --color: var(--kongu-red);
+  }
+  /** Overlay text **/
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.116);
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: var(--kongu-white);
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+    opacity: 1;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    font-size: 2.25rem;
+    justify-content: center;
+  }
+  
+  .overlayText{
+    line-height: 70px;
+  }
+  
+  /**************/
